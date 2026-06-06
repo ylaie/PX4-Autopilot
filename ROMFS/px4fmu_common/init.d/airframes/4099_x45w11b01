@@ -27,6 +27,10 @@ param set-default PWM_MAIN_DIS1 900
 param set-default PWM_MAIN_DIS2 900
 param set-default PWM_MAIN_DIS3 900
 param set-default PWM_MAIN_DIS4 900
+param set-default PWM_MAIN_MIN1 1000
+param set-default PWM_MAIN_MIN2 1000
+param set-default PWM_MAIN_MIN3 1000
+param set-default PWM_MAIN_MIN4 1000
 param set-default PWM_MAIN_MAX1 1900
 param set-default PWM_MAIN_MAX2 1900
 param set-default PWM_MAIN_MAX3 1900
@@ -56,3 +60,6 @@ param set-default PWM_MAIN_FUNC7 2
 param set-default PWM_MAIN_FUNC8 2
 param set-default PWM_MAIN_MAX7 2200
 param set-default PWM_MAIN_MAX8 2200
+
+# Controller
+param set-default COM_RC_IN_MODE 1
