@@ -1,0 +1,58 @@
+#!/bin/sh
+#
+# @name X45W11B01 Quadcopter
+#
+# @type Quadrotor x
+# @class Copter
+#
+# @maintainer YLAIE <ylaie@qq.com>
+#
+
+. ${R}etc/init.d/rc.mc_defaults
+
+# Square quadrotor X PX4 numbering
+param set-default CA_ROTOR_COUNT 4
+param set-default CA_ROTOR0_PX 0.159
+param set-default CA_ROTOR0_PY 0.159
+param set-default CA_ROTOR1_PX -0.159
+param set-default CA_ROTOR1_PY -0.159
+param set-default CA_ROTOR2_PX 0.159
+param set-default CA_ROTOR2_PY -0.159
+param set-default CA_ROTOR2_KM -0.05
+param set-default CA_ROTOR3_PX -0.159
+param set-default CA_ROTOR3_PY 0.159
+param set-default CA_ROTOR3_KM -0.05
+
+param set-default PWM_MAIN_DIS1 900
+param set-default PWM_MAIN_DIS2 900
+param set-default PWM_MAIN_DIS3 900
+param set-default PWM_MAIN_DIS4 900
+param set-default PWM_MAIN_MAX1 1900
+param set-default PWM_MAIN_MAX2 1900
+param set-default PWM_MAIN_MAX3 1900
+param set-default PWM_MAIN_MAX4 1900
+param set-default PWM_MAIN_FUNC1 101
+param set-default PWM_MAIN_FUNC2 102
+param set-default PWM_MAIN_FUNC3 103
+param set-default PWM_MAIN_FUNC4 104
+
+# On frame devices
+# Power Module
+param set-default BAT1_N_CELLS 4
+param set-default UAVCAN_SUB_BAT 1
+
+# Distance Sensor & Optical Flow
+param set-default MAV_1_CONFIG 102
+param set-default MAV_1_MODE 0
+param set-default SER_TEL2_BAUD 115200
+param set-default EKF2_RNG_CTRL 2
+param set-default EKF2_HGT_REF 2
+param set-default EKF2_RNG_POS_X 0.056
+param set-default EKF2_OF_CTRL 1
+param set-default EKF2_OF_POS_X 0.064
+
+# LED
+param set-default PWM_MAIN_FUNC7 2
+param set-default PWM_MAIN_FUNC8 2
+param set-default PWM_MAIN_MAX7 2200
+param set-default PWM_MAIN_MAX8 2200
