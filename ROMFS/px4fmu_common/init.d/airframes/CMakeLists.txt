@@ -69,6 +69,7 @@ if(CONFIG_MODULES_MC_RATE_CONTROL)
 		4061_atl_mantis_edu
 		4071_ifo
 		4073_ifo-s
+		4098_x45w11b02
 		4099_x45w11b01
 		4500_clover4
 		4601_droneblocks_dexi_5
